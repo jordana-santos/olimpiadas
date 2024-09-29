@@ -1,0 +1,82 @@
+body{
+    background: color #f4f4f4;;
+    font-family: Roboto, sans-serif;
+    color: rgb(40, 40, 40);
+}
+
+header {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    font-size: small;
+}
+
+header a {
+    color: rgb(40, 40, 40);
+    text-decoration: none;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;   
+}
+
+nav ul li {
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.textoTocha {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 60%;
+    background-color:rgb(200, 200, 200);
+    padding: 10px;
+    border-radius: 15px;
+}
+.textoTocha h2 {
+    text-align: center;
+}
+
+.textoTocha p{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+}
+
+.carrosselTochas {
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2px;
+    margin-top: 15px;
+}
+
+.carrosselTochas img {
+    width: auto;
+    height: 200px;
+    aspect-ratio: 1/2;
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    color:black;
+    font-size: small;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

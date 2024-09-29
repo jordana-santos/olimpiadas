@@ -3,7 +3,6 @@ body{
     font-family: Roboto, sans-serif;
 }
 
-/*MENU BAR*/
 header {
     width: 100%;
     background-color: #f8f8f8;
@@ -14,6 +13,11 @@ header {
     align-items: center;
     margin-right: 20px;
     font-size: small;
+}
+
+header a {
+    color: rgb(40, 40, 40);
+    text-decoration: none;
 }
 
 .logo {
@@ -31,7 +35,6 @@ nav ul li {
     margin-right: 40px;
 }
 
-/*TELA RECORDES*/
 .carrossel {
     display: flex;
     justify-content: space-around;
@@ -66,12 +69,6 @@ th {
     aspect-ratio: 1/1;
     position: relative;
 }
-
-/*TELA TOCHAS*/
-
-
-
-/*TELA CURIOSIDADES*/
 
 footer {
     text-align: center;
