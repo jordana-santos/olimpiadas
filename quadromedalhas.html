@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos Olímpicos de Paris 2024</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+</head>
+<body>
+    <header class="mb-5">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/pngs/olimpiada-101.png" class="logo-img" alt="Aneis olímpicos" height="15" width="100"/>
+                    </a>
+                </div>
+                <nav>
+                    <button class="menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Página inicial</a></li>
+                        <li><a href="curiosidades.html">Curiosidades</a></li>
+                        <li><a href="https://olympics.com/pt/olympic-channel">Olympic Channel</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container" id="quadro">
+            <h1 class="mb-5">Resultados das Olimpíadas</h1>
+
+            <label for="yearSelect" class="form-label">Escolha o ano:</label>
+            <select id="yearSelect" class="form-select mb-5">
+                <option value="2020">2020</option>
+                <option value="2016">2016</option>
+                <option value="2012">2012</option>
+                <option value="2022">Inverno 2022</option>
+                <option value="2018">Inverno 2018</option>
+                <option value="2014">Inverno 2014</option>
+            </select>
+
+            <div id="results" class="mt-5">
+                <!-- Aqui aparecerão os resultados -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer py-3 border-top mt-5">
+        <div class="container my-4">
+            <div class="col logo"><a href="index.html"><img class="logo-img" src="img/pngs/Olympics-PNG-Download-Image.png"></a></div>
+            <div class="links"><a href="sobreNos.html">Sobre nós</a><a href="contato.html">Contato</a></div>
+            <div class="social-icons">
+                <a class="me-3" style="opacity: 1;background-color: #000;" href="https://www.facebook.com"><img src="img/pngs/facebook-app-round-white-icon.webp"></a>
+                <a class="me-3" style="opacity: 1;background-color: #000;" href="https://www.instagram.com"><img src="img/pngs/instagram-new.png"></a>
+                <a class="me-3" style="opacity: 1;background-color: #000;" href="https://www.youtube.com"><img src="img/pngs/youtube-app-white-icon.webp"></a>
+                <a class="me-3" style="opacity: 1;background-color: #000;" href="https://www.tiktok.com"><img src="img/pngs/tiktok-white-icon.webp"></a>
+            </div>
+            <div class="col">Copyright 2024. Todos os direitos reservados</div>
+        </div>
+    </footer>
+
+    <script src="scripts/quadro.js"></script>
+</body>
+</html>

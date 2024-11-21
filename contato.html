@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos Olímpicos de Paris 2024</title>
+    <link href="style/styles.css" rel="stylesheet">
+    <link href="style/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="mb-5">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="logo-img" src="img/pngs/olimpiada-101.png" alt="Aneis olímpicos" height="15" width="100">
+                    </a>
+                </div>
+                <nav>
+                    <button class="menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Página inicial</a></li>
+                        <li><a href="curiosidades.html">Curiosidades</a></li>
+                        <li><a href="https://olympics.com/pt/olympic-channel">Olympic Channel</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="contact-form">
+                <h2 class="text-center mb-4">Envie sua mensagem para nós</h2>
+                
+                <form id="formContact" action="processar_contato.php" method="post">
+                    <div class="mb-3">
+                        <label class="form-label" for="name">Nome:</label>
+                        <input class="form-control" id="name" name="name" type="text" required>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label class="form-label" for="email">Email:</label>
+                        <input class="form-control" id="email" name="email" type="email" required>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label class="form-label" for="subject">Assunto:</label>
+                        <input class="form-control" id="subject" name="subject" type="text" required>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label class="form-label" for="message">Mensagem:</label>
+                        <textarea class="form-control" id="message" name="message" required></textarea>
+                    </div>
+    
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-submit px-4" id="contactForm" type="submit">Enviar</button>
+                    </div>
+                </form>
+                <div class="resultado" id="reservado" style="display: none;">
+                    <h2>Resultados</h2>
+                    <p id="resultadoNome"></p>
+                    <p id="resultadoEmail"></p>
+                    <p id="resultadoSubject"></p>
+                    <p id="resultadoMessage"></p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+    <footer class="page-footer py-3 border-top mt-5">
+        <div class="container my-4">
+            <div class="col logo"><a href="index.html"><img class="logo-img" src="img/pngs/Olympics-PNG-Download-Image.png"></a></div>
+            <div class="links"><a href="sobreNos.html">Sobre nós</a><a href="contato.html">Contato</a></div>
+            <div class="social-icons">
+                <a class="me-3" href="https://www.facebook.com" style="opacity: 1;background-color: #000;"><img src="img/pngs/facebook-app-round-white-icon.webp"></a>
+                <a class="me-3" href="https://www.instagram.com" style="opacity: 1;background-color: #000;"><img src="img/pngs/instagram-new.png"></a>
+                <a class="me-3" href="https://www.youtube.com" style="opacity: 1;background-color: #000;"><img src="img/pngs/youtube-app-white-icon.webp"></a>
+                <a class="me-3" href="https://www.tiktok.com" style="opacity: 1;background-color: #000;"><img src="img/pngs/tiktok-white-icon.webp"></a>
+            </div>
+            <div class="col">Copyright 2024. Todos os direitos reservados</div>
+        </div>
+    </footer>
+    
+    <script src="scripts/script.js"></script>
+    <script>
+    document.getElementById('formContact').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const formData = new FormData(this);
+
+        fetch(this.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            if (data.trim() === 'success') {
+                alert("Mensagem enviada com sucesso!");
+                window.location.href = 'contato.html';
+            } else {
+                alert("Erro ao enviar: " + data);
+            }
+        })
+        .catch(error => {
+            alert("Ocorreu um erro ao processar a solicitação.");
+            console.error(error);
+        });
+    });
+    </script>
+</body>
+</html>

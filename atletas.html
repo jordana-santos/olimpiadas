@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos Olímpicos de Paris 2024</title>
+    <link rel="stylesheet" href="style/styleAtletas.css">
+    <link rel="stylesheet" href="style/styles.css" >
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+</head>
+<body>
+  <header class="mb-5">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/pngs/olimpiada-101.png" class="logo-img" alt="Aneis olímpicos" height="15" width="100"/>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Página inicial</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+        <li><a href="https://olympics.com/pt/olympic-channel">Olympic Channel</a></li>
+      </ul>
+    </nav>
+</header>
+
+    <main>
+      <div class="container mt-5">
+        <h1 class="text-center mb-4">ATLETAS</h1>
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Digite um nome" id="searchInput">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <img class="icon" src="img/pngs/search-512.webp">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row" id="athletesContainer">
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <button id="prevBtn" class="btn btn-sm btn-secondary me-2">&lt;</button>
+            <div id="pageIndicators" class="d-inline-block">
+            </div>
+            <button id="nextBtn" class="btn btn-sm btn-secondary ms-2">&gt;</button>
+        </div>
+    </div>
+    </main>
+
+    <footer class="page-footer py-3 border-top mt-5">
+      <div class="container my-4">
+          <div class="col logo"><a href="index.html"><img class="logo-img" src="img/pngs/Olympics-PNG-Download-Image.png"></a></div>
+          <div class="links"><a href="sobreNos.html">Sobre nós</a><a href="contato.html">Contato</a></div>
+          <div class="social-icons">
+              <a class="me-3" style="opacity: 1;background-color: #000;" href="https://www.facebook.com"><img src="img/pngs/facebook-app-round-white-icon.webp"></a>
+              <a class="me-3" style="opacity: 1;background-color: #000;" href="https://www.instagram.com"><img src="img/pngs/instagram-new.png"></a>
+              <a class="me-3" style="opacity: 1;background-color: #000;" href="https://www.youtube.com"><img src="img/pngs/youtube-app-white-icon.webp"></a>
+              <a class="me-3" style="opacity: 1;background-color: #000;" href="https://www.tiktok.com"><img src="img/pngs/tiktok-white-icon.webp"></a>
+          </div>
+          <div class="col">Copyright 2024. Todos os direitos reservados</div>
+      </div>
+  </footer>
+
+  <script src="scripts/atletas.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body{
+    background-color:whitesmoke;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+section {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+div img{
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+section div {
+    padding: 25px;
+    background-color:rgb(220, 220, 220);
+    border-radius: 10px;
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+}
+
+.topico1, .topico3{
+    margin-right: 20px;
+}
+
+.topico2{
+    margin-left: 20px;
+}

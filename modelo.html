@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogos Olímpicos de Paris 2024</title>
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="stylesheet" href="style/styleCuriosidades.css">
 </head>
 <body>
     <header class="mb-5">
@@ -14,7 +13,7 @@
             <div class="header-content">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="img/pngs/olimpiada-101.png" class="logo-img" alt="Aneis olímpicos" height="15" width="100"/>
+                        <img src="img/pngs/olimpiada-101.png" class="logo-img" alt="Aneis olímpicos"/>
                     </a>
                 </div>
                 <nav>
@@ -25,52 +24,33 @@
                     </button>
                     <ul class="nav-menu">
                         <li><a href="index.html">Página inicial</a></li>
+                        <li><a href="quadromedalhas.html">Quadro de Medalhas</a></li>
+                        <li><a href="recordes.html">Recordes</a></li>
                         <li><a href="curiosidades.html">Curiosidades</a></li>
-                        <li><a href="https://olympics.com/pt/olympic-channel">Olympic Channel</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+
     <main>
-        <section>
-            <div class="topico1">
-                <h2>O que significa o símbolo olímpico?</h2>
-                <p>Os cinco anéis do símbolo olímpico, 
-                    projetado pelo próprio Barão, 
-                    representam os cinco continentes habitados do mundo.
-                    Suas seis cores (azul, amarelo, preto, verde, vermelho 
-                    e fundo branco) foram escolhidos porque a bandeira de 
-                    cada nação contém um deles, pelo menos.
-                </p>
+        <!-- Exemplo de Card -->
+        <div class="container mt-4"> <!-- esse div define toda a area das cards -->
+            <div class="row"> <!--Normalmente essa div seria a definição de uma linha, no entanto por bem de responsividade eu coloquei todas as cards em uma unica linha-->
+                <div class="col-lg-4 col-md-6 col-6"> <!-- esse div, na estrura que eu segui, define o tamanho da card e o distancimento de uma para outra, por consequencia (sendo col-lg-4, o tamanho em tela grande, col-md-6 em telas medias e col-6 no resto) -->
+                    <div class="card item-card"> <!-- esse div é a card -->
+                        <img src="<referencia da imagem>" alt="<nome da imagem>"> <!-- isso é a imagem da carta -->
+                        <div class="card-body"> <!-- e por fim essa div serva para alinhar o texto -->
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div><img src="img/pngs/olimpiada-101.png"></div>
-        </section>
-        <section>
-            <div><img src="img/noticias/Marie_Claire.webp"></div>
-            <div class="topico2">
-                <h2>A participação das mulheres</h2>
-                <p>Somente no ano de 1900 é que as mulheres foram autorizadas 
-                    a participar dos Jogos Olímpicos. Depois, foram necessários 
-                    112 anos para que todos os países classificados enviassem 
-                    mulheres para competir, em Londres 2012.</p>
-            </div>
-        </section>
-        <section>
-            <div class="topico3">
-                <h2>Quem é o maior medalhista?</h2>
-                <p>O maior medalhista olímpico é o nadador 
-                    americano Michael Phelps, que conquistou 
-                    28 medalhas (23 de ouro, três de prata e 
-                    duas de bronze) nos Jogos de Sydney 2000, 
-                    Atenas 2004, Pequim 2008, Londres 2012 e 
-                    Rio 2016. Fazendo uma comparação, o americano 
-                    tem mais medalhas sozinho do que a Argentina 
-                    na história olímpica (23 contra 21).</p>
-            </div>
-            <div><img src="img/noticias/michael_Phelps.webp"></div>
-        </section>
+        </div>
+        <!--Fim do exemplo-->
+        <!-- Conteudo da pagina -->
     </main>
+    
     <footer class="page-footer py-3 border-top mt-5">
         <div class="container my-4">
             <div class="col logo"><a href="index.html"><img class="logo-img" src="img/pngs/Olympics-PNG-Download-Image.png"></a></div>
@@ -84,6 +64,7 @@
             <div class="col">Copyright 2024. Todos os direitos reservados</div>
         </div>
     </footer>
+    
     <script src="scripts/script.js"></script>
 </body>
 </html>

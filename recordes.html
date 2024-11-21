@@ -3,106 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recordes Olímpicos</title>
-    <link rel="stylesheet" href="styleRecorde.css">
+    <title>Jogos Olímpicos de Paris 2024</title>
+    <link rel="stylesheet" href="style/styleRecorde.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-    <header>
-        <img class="logo" src="img/olimpiada-101.png" alt="Logo olimpiadas"/>
-        <nav>
-            <ul>
-                <li><a href="medalhas.html">Medalhas</a></li>
-                <li><a href="atletas.html">Atletas</a></li>
-                <li><a href="recordes.html">Recordes</a></li>
-                <li><a href="tochas.html">Tochas</a></li>
-                <li><a href="curiosidades.html">Curiosidades</a></li>
-            </ul>
-        </nav>
+    <header class="mb-5">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/pngs/olimpiada-101.png" class="logo-img" alt="Aneis olímpicos" height="15" width="100"/>
+                    </a>
+                </div>
+                <nav>
+                    <button class="menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Página inicial</a></li>
+                        <li><a href="curiosidades.html">Curiosidades</a></li>
+                        <li><a href="https://olympics.com/pt/olympic-channel">Olympic Channel</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    <section class="carrossel">
-        <img src="img/alemanha.png">
-        <img src="img/argentina.png">
-        <img src="img/australia.png">
-        <img src="img/brasil.png">
-        <img src="img/china.png">
-        <img src="img/espanha.png">
-        <img src="img/estados-unidos.png">
-        <img src="img/italia.png">
-        <img src="img/franca.png">
-        <img src="img/mexico.png">
-    </section>
-    <section class="tabelaRecordes">
-        <table>
-            <thead>
-                <tr>
-                    <th>País</th>
-                    <th>Atleta</th>
-                    <th>Esporte</th>
-                    <th>Recorde</th>
-                    <th>Data</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><img src="img/brasil.png" alt="Brasil"></td>
-                    <td>César Cielo</td>
-                    <td>Natação (50m livre)</td>
-                    <td>21.30 segundos</td>
-                    <td>2008</td>
-                </tr>
-                <tr>
-                    <td><img src="img/estados-unidos.png" alt="estados-unidos"></td>
-                    <td>Michael Phelps</td>
-                    <td>Natação (200m livre)</td>
-                    <td>1:42.96</td>
-                    <td>2008</td>
-                </tr>
-                <tr>
-                    <td><img src="img/china.png" alt="china"></td>
-                    <td>Chen Yibing</td>
-                    <td>Ginástica (Argolas)</td>
-                    <td>16.600 pontos</td>
-                    <td>2008</td>
-                </tr>
-                <tr>
-                    <td><img src="img/estados-unidos.png" alt="estados-unidos"></td>
-                    <td>Bob Beamon</td>
-                    <td>Salto em distância</td>
-                    <td>8.90 metros</td>
-                    <td>1968</td>
-                </tr>
-                <tr>
-                    <td><img src="img/brasil.png" alt="Brasil"></td>
-                    <td>Thiago Braz</td>
-                    <td>Salto com vara</td>
-                    <td>6.03 metros</td>
-                    <td>2016</td>
-                </tr>
-                <tr>
-                    <td><img src="img/brasil.png" alt="Brasil"></td>
-                    <td>Maurren Maggi</td>
-                    <td>Salto em distância</td>
-                    <td>7.04 metros</td>
-                    <td>2008</td>
-                </tr>
-                <tr>
-                    <td><img src="img/australia.png" alt="Australia"></td>
-                    <td>Emma McKeon</td>
-                    <td>Natação (4x100m livre)</td>
-                    <td>3:29.69</td>
-                    <td>2021</td>
-                </tr>
-                <tr>
-                    <td><img src="img/china.png" alt="China"></td>
-                    <td>Sun Yang</td>
-                    <td>Natação (400m livre)</td>
-                    <td>3:40.14</td>
-                    <td>2012</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <br><br><br>
-    <footer>Copyright 2024</footer>
+    <main>
+        <section class="carrossel">
+            <img src="img/bandeiras/alemanha.png">
+            <img src="img/bandeiras/argentina.png">
+            <img src="img/bandeiras/australia.png">
+            <img src="img/bandeiras/brasil.png">
+            <img src="img/bandeiras/china.png">
+            <img src="img/bandeiras/espanha.png">
+            <img src="img/bandeiras/estados-unidos.png">
+            <img src="img/bandeiras/italia.png">
+            <img src="img/bandeiras/franca.png">
+            <img src="img/bandeiras/mexico.png">
+        </section>
+        <section class="tabelaRecordes">
+            <table>
+                <thead>
+                    <tr>
+                        <th>País</th>
+                        <th>Atleta</th>
+                        <th>Esporte</th>
+                        <th>Recorde</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="img/bandeiras/brasil.png" alt="Brasil"></td>
+                        <td>César Cielo</td>
+                        <td>Natação (50m livre)</td>
+                        <td>21.30 segundos</td>
+                        <td>2008</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/bandeiras/estados-unidos.png" alt="estados-unidos"></td>
+                        <td>Michael Phelps</td>
+                        <td>Natação (200m livre)</td>
+                        <td>1:42.96</td>
+                        <td>2008</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/bandeiras/china.png" alt="china"></td>
+                        <td>Chen Yibing</td>
+                        <td>Ginástica (Argolas)</td>
+                        <td>16.600 pontos</td>
+                        <td>2008</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/bandeiras/estados-unidos.png" alt="estados-unidos"></td>
+                        <td>Bob Beamon</td>
+                        <td>Salto em distância</td>
+                        <td>8.90 metros</td>
+                        <td>1968</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/bandeiras/brasil.png" alt="Brasil"></td>
+                        <td>Thiago Braz</td>
+                        <td>Salto com vara</td>
+                        <td>6.03 metros</td>
+                        <td>2016</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/bandeiras/brasil.png" alt="Brasil"></td>
+                        <td>Maurren Maggi</td>
+                        <td>Salto em distância</td>
+                        <td>7.04 metros</td>
+                        <td>2008</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/bandeiras/australia.png" alt="Australia"></td>
+                        <td>Emma McKeon</td>
+                        <td>Natação (4x100m livre)</td>
+                        <td>3:29.69</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/bandeiras/china.png" alt="China"></td>
+                        <td>Sun Yang</td>
+                        <td>Natação (400m livre)</td>
+                        <td>3:40.14</td>
+                        <td>2012</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="page-footer py-3 border-top mt-5">
+        <div class="container my-4">
+            <div class="col logo"><a href="index.html"><img class="logo-img" src="img/pngs/Olympics-PNG-Download-Image.png"></a></div>
+            <div class="links"><a href="sobreNos.html">Sobre nós</a><a href="contato.html">Contato</a></div>
+            <div class="social-icons">
+                <a class="me-3" style="opacity: 1;background-color: #000;" href="https://www.facebook.com"><img src="img/pngs/facebook-app-round-white-icon.webp"></a>
+                <a class="me-3" style="opacity: 1;background-color: #000;" href="https://www.instagram.com"><img src="img/pngs/instagram-new.png"></a>
+                <a class="me-3" style="opacity: 1;background-color: #000;" href="https://www.youtube.com"><img src="img/pngs/youtube-app-white-icon.webp"></a>
+                <a class="me-3" style="opacity: 1;background-color: #000;" href="https://www.tiktok.com"><img src="img/pngs/tiktok-white-icon.webp"></a>
+            </div>
+            <div class="col">Copyright 2024. Todos os direitos reservados</div>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
